@@ -16,7 +16,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'classifieds'
     })
     .state({
-      name: 'edit',
+      name: 'post',
       url: '/post',
       component: 'postEdit'
     });
