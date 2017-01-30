@@ -1,0 +1,28 @@
+{
+  "name": "galvanize_classified_2",
+  "version": "1.0.0",
+  "description": "## Read the entire README before beginning. Commit often.",
+  "main": "server.js",
+  "start": "node server.js",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "knex": "^0.12.6",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohendrick1223/Galvanize_Classified_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohendrick1223/Galvanize_Classified_2/issues"
+  },
+  "homepage": "https://github.com/ohendrick1223/Galvanize_Classified_2#readme"
+}
