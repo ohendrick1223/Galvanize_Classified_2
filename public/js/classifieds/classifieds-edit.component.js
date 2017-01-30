@@ -2,9 +2,9 @@
   'use strict';
 
   angular.module('app')
-    .component('classifieds', {
+    .component('postEdit', {
       controller: controller,
-      templateUrl: '/html/classifieds.template.html'
+      templateUrl: 'js/classifieds/classifieds-edit.template.html'
     });
 
     controller.$inject = ['$http'];
@@ -13,8 +13,10 @@
       const vm = this;
 
       vm.$onInit = function() {
-        console.log('i am running');
+        //get all classifieds
       };
     }
         //make http calls for posting, editing, get by id, deleting
+
+    console.log("getting to classifieds-edit.component.js");
 }()); //end of IIFE
