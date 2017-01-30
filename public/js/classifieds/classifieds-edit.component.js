@@ -7,27 +7,16 @@
       templateUrl: 'js/classifieds/classifieds-edit.template.html'
     });
 
-    controller.$inject = ['$http', '$state'];
+    controller.$inject = ['$http', '$state', 'postService'];
 
-    function controller($http, $state) {
+    function controller($http, $state, postService) {
       const vm = this;
 
       vm.$onInit = function() {
       };
+      vm.submitPost = postService.submitPost;
 
-      vm.submitPost = function() {
-        console.log("getting to submitPost function");
-        $http.post('/classifieds', vm.post).then(function(response) {
-          console.log("getting inside post request", response.data);
 
-          $http.get('/classifieds').then(function(response) {
-            console.log("array of classifieds", response.data);
-            vm.allPosts = response.data;
-          });
-        });
-        $state.go('home');
-
-      };
       //add state.go for home page after making a get request
     }
         //make http calls for posting, editing, get by id, deleting
