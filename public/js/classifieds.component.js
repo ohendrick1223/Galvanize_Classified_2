@@ -14,6 +14,10 @@
 
       vm.$onInit = function() {
         console.log('i am running');
+        $http.get('/classifieds').then(function(response) {
+          console.log("array of classifieds", response.data);
+          vm.allPosts = response.data;
+        });
       };
     }
         //make http calls for posting, editing, get by id, deleting
