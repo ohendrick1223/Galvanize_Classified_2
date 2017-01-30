@@ -17,7 +17,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state({
       name: 'edit',
-      url: '/edit/:editId',
+      url: '/post',
       component: 'postEdit'
     });
 }
