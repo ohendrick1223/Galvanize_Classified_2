@@ -4,7 +4,7 @@
   angular.module('app')
     .component('classifieds', {
       controller: controller,
-      templateUrl: '/html/classifieds.template.html'
+      templateUrl: 'js/app/classifieds.template.html'
     });
 
     controller.$inject = ['$http'];
@@ -33,7 +33,7 @@
           });
         });
       };
-    }
-        //make http calls for posting, editing, get by id, deleting
+
+  }//end of controller function
 
 }()); //end of IIFE

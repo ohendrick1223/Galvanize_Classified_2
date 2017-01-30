@@ -18,7 +18,14 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     .state({
       name: 'post',
       url: '/post',
-      component: 'postEdit'
+      component: 'post'
+    })
+    .state({
+      name: 'edit',
+      url: '/edit/:editId',
+      component: 'edit'
     });
 }
 }());//end of IIFE
+
+//plug in to /edit: the name of variable youre storing the url id in

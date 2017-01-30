@@ -1,7 +1,6 @@
-<h1>Edit a classified post</h1>
+<h1>Post to Classifieds</h1>
 
-
-<form class="" action="index.html" method="post" name="classifiedsEditForm">
+<form class="" action="index.html" method="post" name="classifiedsForm">
 
   <label for="title">Title</label>
   <input type="text" name="title" ng-model="$ctrl.post.title">
@@ -15,7 +14,7 @@
   <label for="item_image">Image Url</label>
   <input type="text" name="item_image" ng-model="$ctrl.post.item_image">
 
-  <button ng-click="$ctrl.editPost()" type="submit" ui-sref="home">Update ad</button>
+  <button ng-click="$ctrl.editPost($ctrl.post)" type="submit" ui-sref="home">Post to Classifieds</button>
 
 </form>
 

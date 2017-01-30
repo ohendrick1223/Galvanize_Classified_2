@@ -2,9 +2,9 @@
   'use strict';
 
   angular.module('app')
-    .component('edit', {
+    .component('post', {
       controller: controller,
-      templateUrl: 'js/classifieds/classifieds-edit.template.html'
+      templateUrl: 'js/classifieds/classifieds-post.template.html'
     });
 
     controller.$inject = ['$http', '$state', 'postService'];
@@ -14,8 +14,8 @@
 
       vm.$onInit = function() {
       };
-      vm.editPost = postService.editPost;
-    }
+      vm.submitPost = postService.submitPost;
 
-    console.log("getting to classifieds-edit.component.js");
+    }
+    console.log("getting to classifieds-post.component.js");
 }()); //end of IIFE
