@@ -11,11 +11,11 @@
         console.log(response.data);
       });
     };
-    this.editPost = function(id) {
-      console.log("getting to edit");
+    this.editPost = function(post) {
+      console.log(post.id);
       // var editId = req.params.id;
       // console.log(editId);
-      $http.patch(`classifieds/${editId}`).then(function(response) {
+      $http.patch(`/classifieds/${post.id}`, post).then(function(response) {
         console.log("edited: ", response.data);
       });
     };

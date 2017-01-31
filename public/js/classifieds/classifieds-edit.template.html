@@ -15,7 +15,7 @@
   <label for="item_image">Image Url</label>
   <input type="text" name="item_image" ng-model="$ctrl.post.item_image">
 
-  <button ng-click="$ctrl.editPost()" type="submit" ui-sref="home">Update ad</button>
+  <button ng-click="$ctrl.editPost($ctrl.post)" type="submit" ui-sref="home">Update ad</button>
 
 </form>
 
