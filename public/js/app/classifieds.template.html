@@ -3,7 +3,11 @@
   <a ui-sref="post">Post a new add</a>
 </p>
 
-<div class="" ng-repeat="post in $ctrl.allPosts">
+<div role="presentation" class="active">
+ <input name="search" ng-model="searchText" type="search" class="form-control input-sm search-form" placeholder="Search by keyword">
+</div>
+
+<div class="" ng-repeat="post in $ctrl.allPosts | filter : searchText | orderBy: propertyToOrderBy">
 
   <img ng-src="{{post.item_image}}">
   <div class="">
