@@ -14,8 +14,6 @@
   <label for="item_image">Image Url</label>
   <input type="text" name="item_image" ng-model="$ctrl.post.item_image">
 
-  <button ng-click="$ctrl.editPost($ctrl.post)" type="submit" ui-sref="home">Post to Classifieds</button>
+  <button ng-click="$ctrl.submitPost($ctrl.post)" type="submit" ui-sref="home">Post to Classifieds</button>
 
 </form>
-
-<!-- TODO: add default value to inputs so when user goes to edit, the information is already filled in.-->
