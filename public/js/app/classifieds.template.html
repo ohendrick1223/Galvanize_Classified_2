@@ -7,7 +7,14 @@
  <input name="search" ng-model="searchText" type="search" class="form-control input-sm search-form" placeholder="Search by keyword">
 </div>
 
-<div class="" ng-repeat="post in $ctrl.allPosts | filter : searchText | orderBy: propertyToOrderBy">
+  <p>Sort By: </p>
+  <span class="caret"></span>
+   <button ng-click="$ctrl.propertyToOrderBy = 'price' ; $ctrl.propertyToShowBy = 'Price'"><a value="price">Price</a></button>
+   <button ng-click="$ctrl.propertyToOrderBy = 'created_at' ; $ctrl.propertyToShowBy = 'Date'"><a value="date">Date</a></button>
+   <!-- TODO:Need to re-write routes to have access to created_at/updated_at in object -->
+
+
+<div class="" ng-repeat="post in $ctrl.allPosts | filter : searchText | orderBy: $ctrl.propertyToOrderBy">
 
   <img ng-src="{{post.item_image}}">
   <div class="">

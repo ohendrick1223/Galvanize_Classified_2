@@ -17,6 +17,8 @@
         $http.get('/classifieds').then(function(response) {
           console.log("array of classifieds", response.data);
           vm.allPosts = response.data;
+
+          vm.propertyToOrderBy = vm.post.price;
         });
       };
 
