@@ -13,8 +13,7 @@
           console.log("array of classifieds", response.data);
         });
       });
-      // $state.go('home');
-      // TODO:need home page to refresh with new data immediately
+
     };
     this.editPost = function(post) {
       console.log(post.id);
